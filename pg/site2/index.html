@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Нормализуем стили-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!--Отображаем фавикон-->
+    <link rel="shortcut icon" type="image/x-icon" href="img/fav/favicon.jpg">
+    <!--Подключаем шрифты-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Слайд-шоу</title>
+</head>
+
+<body>
+    <h1 class="sl">Слайд-шоу</h1>
+    <!--Контейнер слайд-шоу-->
+    <div class="slideshow-container">
+        <!-- Блок полноразмерных картинок с номерами и текстом -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./img/img1.jpg" style="width:100%">
+            <div class="text">Черная дыра</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./img/img2.jpg" style="width:100%">
+            <div class="text">Туманность</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./img/img3.jpg" style="width:100%">
+            <div class="text">Солнце</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="./img/img4.jpg" style="width:100%">
+            <div class="text">Скопление звезд</div>
+        </div>
+        <!-- Кнопки вперед и назад -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- точки/круги -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <!--Кнопка назад-->
+    <div class="pf_sp">
+        <a href="../../index.html" class="button_back">&larr; Назад</a>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
