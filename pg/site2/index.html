@@ -8,7 +8,7 @@
     <!--Нормализуем стили-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <!--Отображаем фавикон-->
-    <link rel="shortcut icon" type="image/x-icon" href="img/fav/favicon.jpg">
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/fav/favicon.jpg">
     <!--Подключаем шрифты-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
     <link rel="stylesheet"
@@ -18,7 +18,18 @@
 </head>
 
 <body>
-    <h1 class="sl">Слайд-шоу</h1>
+    <div class="header">
+        <h1 class="sl">Слайд-шоу</h1>
+    </div>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="../../index.html">ДОМОЙ</a>
+            <a href="http://9980.tilda.ws/" target="_blank">КОНТАКТЫ</a>
+            <a href="../site1/bootstrap.html">ОБО МНЕ</a>
+            <a href="#">МЕСТОПОЛОЖЕНИЕ</a>
+            <a id="menu" href="#" class="icon">&#9776</a>
+        </div>
+    </nav>
     <!--Контейнер слайд-шоу-->
     <div class="slideshow-container">
         <!-- Блок полноразмерных картинок с номерами и текстом -->
@@ -53,10 +64,6 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
-    <!--Кнопка назад-->
-    <div class="pf_sp">
-        <a href="../../index.html" class="button_back">&larr; Назад</a>
     </div>
     <script src="./script.js"></script>
 </body>

@@ -13,7 +13,7 @@
     <!--Подключаем собственные стили-->
     <link rel="stylesheet" href="css/main.css">
     <!--Отображаем фавикон-->
-    <link rel="shortcut icon" type="image/x-icon" href="img/fav/favicon.jpg">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/fav/favicon.jpg">
     <!--Подключаем шрифты-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap">
     <link rel="stylesheet"
@@ -22,65 +22,53 @@
 </head>
 
 <body>
-
-    <!--************************
-                    HEADER
-        *************************-->
-
+    <!-- Header -->
     <div class="header">
         <div class="h_title">Мое Портфолио</div>
         <div class="h_slogan">Используем HTML5 и CSS3 для строительства сайта</div>
         <div class="h_arrow">
-            <a href="#el">
-            <i class="fa-solid fa-angle-down"></i>
+            <a href="#scroll">
+                <i class="fa-solid fa-angle-down" style="color: #fff";></i>
             </a>
         </div>
     </div>
-
-
-    <!--************************
-                    INFO
-        *************************-->
-
-    <div class="pf">
+    <!------------>
+    <!-- Info -->
+    <div class="pf" id="scroll">
         <div class="container">
-
-            <!--************************
-                NAVIGATION
-        *************************-->
-
-            <nav id="el">
+            <!-- Navigation -->
+            <nav>
                 <div class="topnav" id="myTopnav">
-                    <a href="#">HOME</a>
-                    <a href="../../index.html">PROJECTS</a>
-                    <a href="../pg/site1.html">SITE 1</a>
-                    <a href="#">CONTACT</a>
-                    <a href="#">ABOUT</a>
-                    <a href="#">LOCATION</a>
+                    <a href="#">ДОМОЙ</a>
+                    <a href="http://9980.tilda.ws/" target="_blank">КОНТАКТЫ</a>
+                    <a href="./pg/site1/bootstrap.html">ОБО МНЕ</a>
+                    <a href="#">МЕСТОПОЛОЖЕНИЕ</a>
                     <a id="menu" href="#" class="icon">&#9776</a>
                 </div>
             </nav>
+            <!---------------->
+            <!-- My works -->
             <div class="title">Мои работы</div>
             <div class="row">
-                <!--Работа 1-->
+                <!-- Work 1 -->
                 <div class="c-4">
                     <div class="pf-item">
                         <div class="pf-item_img">
-                            <img src="./img/pic/img2.jpg" height="250" width="340" alt="Bootstrap">
+                            <img class="animate" src="./img/pic/img9.png" height="250" width="340" alt="Bootstrap">
                         </div>
                         <div class="pf-item_title">
                             <a href="./pg/site1/bootstrap.html">Bootstrap</a>
                         </div>
                         <div class="pf-item_txt">
-                            <p>Сайт созданный при помощи фреймворка Bootstrap</p>
+                            <p>Портфолио созданное при помощи фреймворка Bootstrap</p>
                         </div>
                     </div>
                 </div>
-                <!-- // Работа 1-->
-                <!--Работа 2-->
+                <!------------>
+                <!-- Work 2 -->
                 <div class="c-4">
                     <div class="pf-item_img">
-                        <img src="./img/pic/img3.jpg" height="250" width="340" alt="Слайд-шоу">
+                        <img class="animate" src="./img/pic/img3.jpg" height="250" width="340" alt="Слайд-шоу">
                     </div>
                     <div class="pf-item_title">
                         <a href="./pg/site2/index.html">Слайд шоу</a>
@@ -89,37 +77,35 @@
                         <p>Создаем слайд-шоу при помощи JavaScript</p>
                     </div>
                 </div>
-                <!-- // Работа 2-->
-                <!--Работа 3-->
+                <!------------>
+                <!-- Work 3 -->
                 <div class="c-4">
                     <div class="pf-item_img">
-                        <img src="img/pic/img8.png" height="250" width="340" alt="Tilda">
+                        <img class="animate" src="img/pic/img8.png" height="250" width="340" alt="Tilda">
                     </div>
                     <div class="pf-item_title">
-                        <a href="http://9980.tilda.ws/" target="_blank">Сайт на Tilda</a>
+                        <a href="http://9980.tilda.ws/" target="_blank">Контактные данные на Tilda</a>
                     </div>
                     <div class="pf-item_txt">
-                        <p>Создаем сайт при помощи Tilda</p>
+                        <p>Создаем сайт с контактной информацией при помощи Tilda</p>
                     </div>
                 </div>
-                <!-- // Работа 3-->
+                <!------------>
             </div>
         </div>
     </div>
-
-    <!--************************
-                    FOOTER
-        *************************-->
+    <!-- Footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
-                <!--Footer left-->
+                <!-- Footer left -->
                 <div class="c-4">
                     <p class="ft_name">Ломакин Никита Дмитриевич</p>
                     <p>Учиться и, когда придет время, прикладывать усвоенное к делу — разве это не прекрасно!</p>
+                    <p>- Конфуций -</p>
                 </div>
-                <!-- // Footer left-->
-                <!--Footer center-->
+                <!----------------->
+                <!-- Footer center -->
                 <div class="c-4">
                     <p class="ft_soc">Мои ссылки:</p>
                     <p class="ft_soc_icons">
@@ -130,8 +116,8 @@
                             <i class="fa-brands fa-telegram"></i>
                         </a>
                         </a>
-                        <a href="https://steamcommunity.com/profiles/76561198080495542/" target="blank">
-                            <i class="fa-brands fa-steam"></i>
+                        <a href="https://github.com/Exalted97" target="blank">
+                            <i class="fa-brands fa-github"></i>
                         </a>
                         <a href="#" target="_blank">
                             <i class="fa-brands fa-twitter"></i>
@@ -141,15 +127,17 @@
                         </a>
                     </p>
                 </div>
-                <!-- // Footer center-->
-                <!--Footer right-->
+                <!------------------>
+                <!-- Footer right -->
                 <div class="c-4-footer">
                     <p>Можете свободно со мной <br> связаться для любых целей</p>
-                    <div>
-                        <a class="button" target="blank" href="https://t.me/Exalted97">Написать</a>
+                    <div style="margin-top: 50px;">
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> by <a href="https://t.me/Exalted97"
+                            target="_blank">Exalted</a>
                     </div>
                 </div>
-                <!-- // Footer right-->
+                <!------------------>
             </div>
         </div>
     </div>
