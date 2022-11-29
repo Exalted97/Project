@@ -1,3 +1,4 @@
+// Плавный скролл до нужного элемента
 const smoothLinks = document.querySelectorAll('a[href^="#scroll"]');
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {
@@ -10,3 +11,4 @@ for (let smoothLink of smoothLinks) {
         });
     });
 };
+// 

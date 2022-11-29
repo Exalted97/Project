@@ -1,15 +1,20 @@
-var slideIndex = 1;
+// Создание переменной
+let slideIndex = 1;
 showSlides(slideIndex);
+// 
 
-// < !--управление вперед / назад-- >
+// Управление вперед / назад
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
+// 
 
-// < !--контроль картинок-- >
+// Контроль картинок
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
+// 
+
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
